@@ -129,13 +129,13 @@
 		1908573E29FAB27B006F73F0 /* WorldOfPayback */ = {
 			isa = PBXGroup;
 			children = (
+				19668E422A006B080094766E /* MockupData */,
 				19668E392A0060BF0094766E /* Error */,
 				19668E252A005B5F0094766E /* Networking */,
-				19668E302A005D900094766E /* Repositories */,
 				19668E232A005A400094766E /* Models */,
+				19668E302A005D900094766E /* Repositories */,
 				19668E222A0059E70094766E /* Scenes */,
 				19668E362A005FCB0094766E /* Utils */,
-				190857A529FBEC6A006F73F0 /* PBTransactions.json */,
 				1908574329FAB27D006F73F0 /* Assets.xcassets */,
 				1908574529FAB27D006F73F0 /* Preview Content */,
 			);
@@ -253,6 +253,14 @@
 				19668E3A2A0060CF0094766E /* AppError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		19668E422A006B080094766E /* MockupData */ = {
+			isa = PBXGroup;
+			children = (
+				190857A529FBEC6A006F73F0 /* PBTransactions.json */,
+			);
+			path = MockupData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

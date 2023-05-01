@@ -10,7 +10,8 @@ import Alamofire
 
 class TransactionApiClient: ApiClient {
 
-    func getUser(identifier: String, callback: @escaping (_ transaction: Transaction?, _ error: ApiError?) -> Void) {
+    func getTransaction(identifier: String, callback: @escaping (_ transaction: Transaction?,
+                                                                 _ error: ApiError?) -> Void) {
         makeRequest(using: .post,
                     body: nil,
                     path: identifier,
