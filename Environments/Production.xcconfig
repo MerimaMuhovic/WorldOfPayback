@@ -1,0 +1,16 @@
+//
+//  Production.xcconfig
+//  WorldOfPayback
+//
+//  Created by Merima Muhovic on 1. 5. 2023..
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BUNDLE_NAME = WorldOfPayback
+BUNDLE_IDENTIFIER = com.payback.WorldOfPayback
+BUNDLE_VERSION = 1.0.0
+BUNDLE_BUILD = 1
+
+serverUrl = http:/$()/api.payback.com/transactions

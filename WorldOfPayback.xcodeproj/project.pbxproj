@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1908574429FAB27D006F73F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1908574329FAB27D006F73F0 /* Assets.xcassets */; };
+		1908574729FAB27D006F73F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1908574629FAB27D006F73F0 /* Preview Assets.xcassets */; };
+		1908575129FAB27E006F73F0 /* WorldOfPaybackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908575029FAB27E006F73F0 /* WorldOfPaybackTests.swift */; };
+		1908575B29FAB27E006F73F0 /* WorldOfPaybackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908575A29FAB27E006F73F0 /* WorldOfPaybackUITests.swift */; };
+		1908575D29FAB27E006F73F0 /* WorldOfPaybackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908575C29FAB27E006F73F0 /* WorldOfPaybackUITestsLaunchTests.swift */; };
+		1908576C29FB02DC006F73F0 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908576B29FB02DC006F73F0 /* JSONManager.swift */; };
+		1908576E29FB087C006F73F0 /* WorldOfPaybackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908576D29FB087C006F73F0 /* WorldOfPaybackApp.swift */; };
+		190857A629FBEC6A006F73F0 /* PBTransactions.json in Resources */ = {isa = PBXBuildFile; fileRef = 190857A529FBEC6A006F73F0 /* PBTransactions.json */; };
+		1941D95729FEC6680011866B /* OfflineScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1941D95629FEC6680011866B /* OfflineScreen.swift */; };
+		194E5A0C29FDBB2C00E21322 /* TransactionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E5A0B29FDBB2C00E21322 /* TransactionDetails.swift */; };
+		194E5A1029FDBC0500E21322 /* TransactionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E5A0F29FDBC0500E21322 /* TransactionsList.swift */; };
+		19668E1A2A004D500094766E /* Testing.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 19668E192A004D500094766E /* Testing.xcconfig */; };
+		19668E1B2A004D500094766E /* Testing.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 19668E192A004D500094766E /* Testing.xcconfig */; };
+		19668E1C2A004D500094766E /* Testing.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 19668E192A004D500094766E /* Testing.xcconfig */; };
+		19668E1E2A004DA40094766E /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 19668E1D2A004DA40094766E /* Production.xcconfig */; };
+		19668E1F2A004DA40094766E /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 19668E1D2A004DA40094766E /* Production.xcconfig */; };
+		19668E202A004DA40094766E /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 19668E1D2A004DA40094766E /* Production.xcconfig */; };
+		19668E272A005BB00094766E /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E262A005BB00094766E /* ApiClient.swift */; };
+		19668E2B2A005CDA0094766E /* TransactionApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E2A2A005CDA0094766E /* TransactionApiClient.swift */; };
+		19668E322A005DD50094766E /* TransactionsRepositorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E312A005DD50094766E /* TransactionsRepositorie.swift */; };
+		19668E352A005F1B0094766E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 19668E342A005F1B0094766E /* Alamofire */; };
+		19668E382A005FF70094766E /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E372A005FF70094766E /* AppConfiguration.swift */; };
+		19668E3B2A0060CF0094766E /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E3A2A0060CF0094766E /* AppError.swift */; };
+		19668E3D2A00619C0094766E /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E3C2A00619C0094766E /* AnyEncodable.swift */; };
+		19668E3F2A0062DC0094766E /* TransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E3E2A0062DC0094766E /* TransactionRequest.swift */; };
+		19668E412A0062EB0094766E /* TransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E402A0062EB0094766E /* TransactionResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1908574D29FAB27E006F73F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1908573429FAB27B006F73F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1908573B29FAB27B006F73F0;
+			remoteInfo = WorldOfPayback;
+		};
+		1908575729FAB27E006F73F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1908573429FAB27B006F73F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1908573B29FAB27B006F73F0;
+			remoteInfo = WorldOfPayback;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1908573C29FAB27B006F73F0 /* WorldOfPayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1908574329FAB27D006F73F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1908574629FAB27D006F73F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1908574C29FAB27E006F73F0 /* WorldOfPaybackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPaybackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1908575029FAB27E006F73F0 /* WorldOfPaybackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPaybackTests.swift; sourceTree = "<group>"; };
+		1908575629FAB27E006F73F0 /* WorldOfPaybackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPaybackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1908575A29FAB27E006F73F0 /* WorldOfPaybackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPaybackUITests.swift; sourceTree = "<group>"; };
+		1908575C29FAB27E006F73F0 /* WorldOfPaybackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPaybackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1908576B29FB02DC006F73F0 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
+		1908576D29FB087C006F73F0 /* WorldOfPaybackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldOfPaybackApp.swift; sourceTree = "<group>"; };
+		190857A529FBEC6A006F73F0 /* PBTransactions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PBTransactions.json; sourceTree = "<group>"; };
+		1941D95629FEC6680011866B /* OfflineScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineScreen.swift; sourceTree = "<group>"; };
+		194E5A0B29FDBB2C00E21322 /* TransactionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetails.swift; sourceTree = "<group>"; };
+		194E5A0F29FDBC0500E21322 /* TransactionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsList.swift; sourceTree = "<group>"; };
+		19668E192A004D500094766E /* Testing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Testing.xcconfig; sourceTree = "<group>"; };
+		19668E1D2A004DA40094766E /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		19668E262A005BB00094766E /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		19668E2A2A005CDA0094766E /* TransactionApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionApiClient.swift; sourceTree = "<group>"; };
+		19668E312A005DD50094766E /* TransactionsRepositorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRepositorie.swift; sourceTree = "<group>"; };
+		19668E372A005FF70094766E /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		19668E3A2A0060CF0094766E /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		19668E3C2A00619C0094766E /* AnyEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
+		19668E3E2A0062DC0094766E /* TransactionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRequest.swift; sourceTree = "<group>"; };
+		19668E402A0062EB0094766E /* TransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1908573929FAB27B006F73F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19668E352A005F1B0094766E /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1908574929FAB27E006F73F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1908575329FAB27E006F73F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1908573329FAB27B006F73F0 = {
+			isa = PBXGroup;
+			children = (
+				19668E212A0059990094766E /* Environments */,
+				1908573E29FAB27B006F73F0 /* WorldOfPayback */,
+				1908574F29FAB27E006F73F0 /* WorldOfPaybackTests */,
+				1908575929FAB27E006F73F0 /* WorldOfPaybackUITests */,
+				1908573D29FAB27B006F73F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1908573D29FAB27B006F73F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1908573C29FAB27B006F73F0 /* WorldOfPayback.app */,
+				1908574C29FAB27E006F73F0 /* WorldOfPaybackTests.xctest */,
+				1908575629FAB27E006F73F0 /* WorldOfPaybackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1908573E29FAB27B006F73F0 /* WorldOfPayback */ = {
+			isa = PBXGroup;
+			children = (
+				19668E392A0060BF0094766E /* Error */,
+				19668E252A005B5F0094766E /* Networking */,
+				19668E302A005D900094766E /* Repositories */,
+				19668E232A005A400094766E /* Models */,
+				19668E222A0059E70094766E /* Scenes */,
+				19668E362A005FCB0094766E /* Utils */,
+				190857A529FBEC6A006F73F0 /* PBTransactions.json */,
+				1908574329FAB27D006F73F0 /* Assets.xcassets */,
+				1908574529FAB27D006F73F0 /* Preview Content */,
+			);
+			path = WorldOfPayback;
+			sourceTree = "<group>";
+		};
+		1908574529FAB27D006F73F0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1908574629FAB27D006F73F0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1908574F29FAB27E006F73F0 /* WorldOfPaybackTests */ = {
+			isa = PBXGroup;
+			children = (
+				1908575029FAB27E006F73F0 /* WorldOfPaybackTests.swift */,
+			);
+			path = WorldOfPaybackTests;
+			sourceTree = "<group>";
+		};
+		1908575929FAB27E006F73F0 /* WorldOfPaybackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1908575A29FAB27E006F73F0 /* WorldOfPaybackUITests.swift */,
+				1908575C29FAB27E006F73F0 /* WorldOfPaybackUITestsLaunchTests.swift */,
+			);
+			path = WorldOfPaybackUITests;
+			sourceTree = "<group>";
+		};
+		19668E212A0059990094766E /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				19668E1D2A004DA40094766E /* Production.xcconfig */,
+				19668E192A004D500094766E /* Testing.xcconfig */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		19668E222A0059E70094766E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1941D95629FEC6680011866B /* OfflineScreen.swift */,
+				1908576D29FB087C006F73F0 /* WorldOfPaybackApp.swift */,
+				194E5A0F29FDBC0500E21322 /* TransactionsList.swift */,
+				194E5A0B29FDBB2C00E21322 /* TransactionDetails.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		19668E232A005A400094766E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				19668E242A005ABB0094766E /* ApiModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		19668E242A005ABB0094766E /* ApiModels */ = {
+			isa = PBXGroup;
+			children = (
+				19668E2F2A005D3F0094766E /* Responses */,
+				19668E2E2A005D370094766E /* Requests */,
+				1908576B29FB02DC006F73F0 /* JSONManager.swift */,
+			);
+			path = ApiModels;
+			sourceTree = "<group>";
+		};
+		19668E252A005B5F0094766E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				19668E262A005BB00094766E /* ApiClient.swift */,
+				19668E2A2A005CDA0094766E /* TransactionApiClient.swift */,
+				19668E3C2A00619C0094766E /* AnyEncodable.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		19668E2E2A005D370094766E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				19668E3E2A0062DC0094766E /* TransactionRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		19668E2F2A005D3F0094766E /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				19668E402A0062EB0094766E /* TransactionResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		19668E302A005D900094766E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				19668E312A005DD50094766E /* TransactionsRepositorie.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		19668E362A005FCB0094766E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				19668E372A005FF70094766E /* AppConfiguration.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		19668E392A0060BF0094766E /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				19668E3A2A0060CF0094766E /* AppError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1908573B29FAB27B006F73F0 /* WorldOfPayback */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1908576029FAB27E006F73F0 /* Build configuration list for PBXNativeTarget "WorldOfPayback" */;
+			buildPhases = (
+				1908573829FAB27B006F73F0 /* Sources */,
+				1908573929FAB27B006F73F0 /* Frameworks */,
+				1908573A29FAB27B006F73F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorldOfPayback;
+			packageProductDependencies = (
+				19668E342A005F1B0094766E /* Alamofire */,
+			);
+			productName = WorldOfPayback;
+			productReference = 1908573C29FAB27B006F73F0 /* WorldOfPayback.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1908574B29FAB27E006F73F0 /* WorldOfPaybackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1908576329FAB27E006F73F0 /* Build configuration list for PBXNativeTarget "WorldOfPaybackTests" */;
+			buildPhases = (
+				1908574829FAB27E006F73F0 /* Sources */,
+				1908574929FAB27E006F73F0 /* Frameworks */,
+				1908574A29FAB27E006F73F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1908574E29FAB27E006F73F0 /* PBXTargetDependency */,
+			);
+			name = WorldOfPaybackTests;
+			productName = WorldOfPaybackTests;
+			productReference = 1908574C29FAB27E006F73F0 /* WorldOfPaybackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1908575529FAB27E006F73F0 /* WorldOfPaybackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1908576629FAB27E006F73F0 /* Build configuration list for PBXNativeTarget "WorldOfPaybackUITests" */;
+			buildPhases = (
+				1908575229FAB27E006F73F0 /* Sources */,
+				1908575329FAB27E006F73F0 /* Frameworks */,
+				1908575429FAB27E006F73F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1908575829FAB27E006F73F0 /* PBXTargetDependency */,
+			);
+			name = WorldOfPaybackUITests;
+			productName = WorldOfPaybackUITests;
+			productReference = 1908575629FAB27E006F73F0 /* WorldOfPaybackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1908573429FAB27B006F73F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					1908573B29FAB27B006F73F0 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					1908574B29FAB27E006F73F0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 1908573B29FAB27B006F73F0;
+					};
+					1908575529FAB27E006F73F0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 1908573B29FAB27B006F73F0;
+					};
+				};
+			};
+			buildConfigurationList = 1908573729FAB27B006F73F0 /* Build configuration list for PBXProject "WorldOfPayback" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1908573329FAB27B006F73F0;
+			packageReferences = (
+				19668E332A005F1B0094766E /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 1908573D29FAB27B006F73F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1908573B29FAB27B006F73F0 /* WorldOfPayback */,
+				1908574B29FAB27E006F73F0 /* WorldOfPaybackTests */,
+				1908575529FAB27E006F73F0 /* WorldOfPaybackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1908573A29FAB27B006F73F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1908574729FAB27D006F73F0 /* Preview Assets.xcassets in Resources */,
+				19668E1E2A004DA40094766E /* Production.xcconfig in Resources */,
+				19668E1A2A004D500094766E /* Testing.xcconfig in Resources */,
+				190857A629FBEC6A006F73F0 /* PBTransactions.json in Resources */,
+				1908574429FAB27D006F73F0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1908574A29FAB27E006F73F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19668E1B2A004D500094766E /* Testing.xcconfig in Resources */,
+				19668E1F2A004DA40094766E /* Production.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1908575429FAB27E006F73F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19668E1C2A004D500094766E /* Testing.xcconfig in Resources */,
+				19668E202A004DA40094766E /* Production.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1908573829FAB27B006F73F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				194E5A1029FDBC0500E21322 /* TransactionsList.swift in Sources */,
+				1908576E29FB087C006F73F0 /* WorldOfPaybackApp.swift in Sources */,
+				19668E3F2A0062DC0094766E /* TransactionRequest.swift in Sources */,
+				1908576C29FB02DC006F73F0 /* JSONManager.swift in Sources */,
+				19668E2B2A005CDA0094766E /* TransactionApiClient.swift in Sources */,
+				19668E412A0062EB0094766E /* TransactionResponse.swift in Sources */,
+				194E5A0C29FDBB2C00E21322 /* TransactionDetails.swift in Sources */,
+				19668E382A005FF70094766E /* AppConfiguration.swift in Sources */,
+				19668E3D2A00619C0094766E /* AnyEncodable.swift in Sources */,
+				19668E322A005DD50094766E /* TransactionsRepositorie.swift in Sources */,
+				19668E3B2A0060CF0094766E /* AppError.swift in Sources */,
+				1941D95729FEC6680011866B /* OfflineScreen.swift in Sources */,
+				19668E272A005BB00094766E /* ApiClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1908574829FAB27E006F73F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1908575129FAB27E006F73F0 /* WorldOfPaybackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1908575229FAB27E006F73F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1908575D29FAB27E006F73F0 /* WorldOfPaybackUITestsLaunchTests.swift in Sources */,
+				1908575B29FAB27E006F73F0 /* WorldOfPaybackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1908574E29FAB27E006F73F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1908573B29FAB27B006F73F0 /* WorldOfPayback */;
+			targetProxy = 1908574D29FAB27E006F73F0 /* PBXContainerItemProxy */;
+		};
+		1908575829FAB27E006F73F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1908573B29FAB27B006F73F0 /* WorldOfPayback */;
+			targetProxy = 1908575729FAB27E006F73F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1908575E29FAB27E006F73F0 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19668E192A004D500094766E /* Testing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Testing;
+		};
+		1908575F29FAB27E006F73F0 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19668E1D2A004DA40094766E /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Production;
+		};
+		1908576129FAB27E006F73F0 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19668E192A004D500094766E /* Testing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WorldOfPayback/Preview Content\"";
+				DEVELOPMENT_TEAM = 6A8Y22NRM2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payback.WorldOfPayback.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Testing;
+		};
+		1908576229FAB27E006F73F0 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19668E1D2A004DA40094766E /* Production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WorldOfPayback/Preview Content\"";
+				DEVELOPMENT_TEAM = 6A8Y22NRM2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payback.WorldOfPayback;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Production;
+		};
+		1908576429FAB27E006F73F0 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19668E192A004D500094766E /* Testing.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A8Y22NRM2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payback.WorldOfPayback.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldOfPayback.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WorldOfPayback";
+			};
+			name = Testing;
+		};
+		1908576529FAB27E006F73F0 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19668E1D2A004DA40094766E /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A8Y22NRM2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payback.WorldOfPayback;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldOfPayback.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WorldOfPayback";
+			};
+			name = Production;
+		};
+		1908576729FAB27E006F73F0 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19668E192A004D500094766E /* Testing.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A8Y22NRM2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Merima.WorldOfPaybackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WorldOfPayback;
+			};
+			name = Testing;
+		};
+		1908576829FAB27E006F73F0 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19668E1D2A004DA40094766E /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A8Y22NRM2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Merima.WorldOfPaybackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WorldOfPayback;
+			};
+			name = Production;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1908573729FAB27B006F73F0 /* Build configuration list for PBXProject "WorldOfPayback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1908575E29FAB27E006F73F0 /* Testing */,
+				1908575F29FAB27E006F73F0 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
+		};
+		1908576029FAB27E006F73F0 /* Build configuration list for PBXNativeTarget "WorldOfPayback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1908576129FAB27E006F73F0 /* Testing */,
+				1908576229FAB27E006F73F0 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
+		};
+		1908576329FAB27E006F73F0 /* Build configuration list for PBXNativeTarget "WorldOfPaybackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1908576429FAB27E006F73F0 /* Testing */,
+				1908576529FAB27E006F73F0 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
+		};
+		1908576629FAB27E006F73F0 /* Build configuration list for PBXNativeTarget "WorldOfPaybackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1908576729FAB27E006F73F0 /* Testing */,
+				1908576829FAB27E006F73F0 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19668E332A005F1B0094766E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19668E342A005F1B0094766E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19668E332A005F1B0094766E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1908573429FAB27B006F73F0 /* Project object */;
+}
