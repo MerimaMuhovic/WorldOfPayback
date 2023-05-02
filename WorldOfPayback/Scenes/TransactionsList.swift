@@ -41,10 +41,6 @@ struct TransactionsList: View {
             .padding(.horizontal)
             .padding(.top, 3)
             
-            if isLoading {
-                LoadingSpinner(isLoading: isLoading)
-            }
-            
             List(viewModel.filteredItems, id: \.alias.reference) { item in
                 NavigationLink(destination: TransactionDetails(partnerDisplayName: item.partnerDisplayName, description: item.transactionDetail.description ?? "")) {
                     HStack {
@@ -64,22 +60,19 @@ struct TransactionsList: View {
                             }
                         }
                     }
+                    .contentShape(Rectangle())
                     .onTapGesture {
                         selectedTransaction = item
                     }
+                    .allowsHitTesting(false)
                 }
             }
             .onAppear {
-                isLoading = true
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    viewModel.loadTransactions()
-                    isLoading = false
-                }
+                viewModel.loadTransactions()
             }
         }
     }
 }
-
 
 struct TransactionsList_Previews: PreviewProvider {
     static var previews: some View {
