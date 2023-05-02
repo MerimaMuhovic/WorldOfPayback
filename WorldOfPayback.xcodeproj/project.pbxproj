@@ -35,6 +35,7 @@
 		19668E412A0062EB0094766E /* TransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E402A0062EB0094766E /* TransactionResponse.swift */; };
 		19668E462A0116080094766E /* AppConstants .swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E452A0116080094766E /* AppConstants .swift */; };
 		19668E4A2A01AA130094766E /* TransactionListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E492A01AA130094766E /* TransactionListModel.swift */; };
+		19668E4D2A01B6B80094766E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E4C2A01B6B80094766E /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		19668E402A0062EB0094766E /* TransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionResponse.swift; sourceTree = "<group>"; };
 		19668E452A0116080094766E /* AppConstants .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppConstants .swift"; sourceTree = "<group>"; };
 		19668E492A01AA130094766E /* TransactionListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListModel.swift; sourceTree = "<group>"; };
+		19668E4C2A01B6B80094766E /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		1908573E29FAB27B006F73F0 /* WorldOfPayback */ = {
 			isa = PBXGroup;
 			children = (
+				19668E4B2A01B6A00094766E /* Components */,
 				19668E422A006B080094766E /* MockupData */,
 				19668E392A0060BF0094766E /* Error */,
 				19668E252A005B5F0094766E /* Networking */,
@@ -267,6 +270,14 @@
 				190857A529FBEC6A006F73F0 /* PBTransactions.json */,
 			);
 			path = MockupData;
+			sourceTree = "<group>";
+		};
+		19668E4B2A01B6A00094766E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				19668E4C2A01B6B80094766E /* Button.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +426,7 @@
 				194E5A1029FDBC0500E21322 /* TransactionsList.swift in Sources */,
 				1908576E29FB087C006F73F0 /* WorldOfPaybackApp.swift in Sources */,
 				19668E3F2A0062DC0094766E /* TransactionRequest.swift in Sources */,
+				19668E4D2A01B6B80094766E /* Button.swift in Sources */,
 				1908576C29FB02DC006F73F0 /* JSONManager.swift in Sources */,
 				19668E2B2A005CDA0094766E /* TransactionApiClient.swift in Sources */,
 				19668E4A2A01AA130094766E /* TransactionListModel.swift in Sources */,

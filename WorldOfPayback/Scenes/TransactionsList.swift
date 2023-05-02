@@ -12,7 +12,6 @@ struct TransactionsList: View {
     private let filterOptions = ["All", "Category 1", "Category 2", "Category 3"]
     @ObservedObject private var viewModel = TransactionListModel()
     
-    
     var body: some View {
         VStack {
             HStack {
@@ -33,7 +32,9 @@ struct TransactionsList: View {
                         Text(option)
                             .fontWeight( viewModel.selectedFilterOption == option ? .bold : .regular )
                     })
-                    .buttonStyle(FilterButtonStyle(selected:  viewModel.selectedFilterOption == option))
+                    .buttonStyle(
+                        FilterButtonStyle(selected: viewModel.selectedFilterOption == option)
+                    )
                 }
             }
             .padding(.horizontal)
@@ -66,20 +67,6 @@ struct TransactionsList: View {
             .onAppear {
                 viewModel.loadTransactions()
             }
-        }
-    }
-    
-    struct FilterButtonStyle: ButtonStyle {
-        let selected: Bool
-        
-        func makeBody(configuration: Configuration) -> some View {
-            configuration.label
-                .padding(.vertical, 10)
-                .padding(.horizontal, 15)
-                .foregroundColor(selected ? .white : .blue)
-                .background(selected ? Color.blue : Color.white)
-                .cornerRadius(20)
-                .font(.caption)
         }
     }
     
