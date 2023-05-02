@@ -7,59 +7,39 @@
 
 import SwiftUI
 
-
 struct TransactionsList: View {
-    @State private var transactions: Transactions?
     @State private var selectedTransaction: Item?
     private let filterOptions = ["All", "Category 1", "Category 2", "Category 3"]
-    @State private var selectedFilterOption = "All"
-
-    var filteredItems: [Item] {
-        switch selectedFilterOption {
-        case "All":
-            return transactions?.items.sorted(by: { $0.transactionDetail.bookingDate > $1.transactionDetail.bookingDate }) ?? []
-        case "Category 1":
-            return transactions?.items.filter { $0.category == 1 }.sorted(by: { $0.transactionDetail.bookingDate > $1.transactionDetail.bookingDate }) ?? []
-        case "Category 2":
-            return transactions?.items.filter { $0.category == 2 }.sorted(by: { $0.transactionDetail.bookingDate > $1.transactionDetail.bookingDate }) ?? []
-        case "Category 3":
-            return transactions?.items.filter { $0.category == 3 }.sorted(by: { $0.transactionDetail.bookingDate > $1.transactionDetail.bookingDate }) ?? []
-        default:
-            return transactions?.items.sorted(by: { $0.transactionDetail.bookingDate > $1.transactionDetail.bookingDate }) ?? []
-        }
-    }
-
-    var filteredItemsSum: Double {
-        Double(filteredItems.reduce(0) { $0 + $1.transactionDetail.value.amount })
-    }
-
+    @ObservedObject private var viewModel = TransactionListModel()
+    
+    
     var body: some View {
         VStack {
             HStack {
                 Spacer()
-                Text("Total: \(filteredItemsSum, specifier: "%.2f")")
+                Text("Total: \(viewModel.filteredItemsSum, specifier: "%.2f")")
                     .font(.headline)
                     .foregroundColor(.black)
             }
             .padding(.horizontal)
             .padding(.top, 20)
             .navigationTitle(Content.transaction)
-
+            
             HStack {
                 ForEach(filterOptions, id: \.self) { option in
                     Button(action: {
-                        selectedFilterOption = option
+                        viewModel.selectedFilterOption = option
                     }, label: {
                         Text(option)
-                            .fontWeight(selectedFilterOption == option ? .bold : .regular )
+                            .fontWeight( viewModel.selectedFilterOption == option ? .bold : .regular )
                     })
-                    .buttonStyle(FilterButtonStyle(selected: selectedFilterOption == option))
+                    .buttonStyle(FilterButtonStyle(selected:  viewModel.selectedFilterOption == option))
                 }
             }
             .padding(.horizontal)
             .padding(.top, 3)
-
-            List(filteredItems, id: \.alias.reference) { item in
+            
+            List(viewModel.filteredItems, id: \.alias.reference) { item in
                 NavigationLink(destination: TransactionDetails(partnerDisplayName: item.partnerDisplayName, description: item.transactionDetail.description ?? "")) {
                     HStack {
                         VStack(alignment: .leading) {
@@ -72,8 +52,8 @@ struct TransactionsList: View {
                         Spacer()
                         VStack(alignment: .trailing) {
                             Text("\(item.transactionDetail.value.amount) \(item.transactionDetail.value.currency)")
-                            if let date = parseDate(from: item.transactionDetail.bookingDate) {
-                                Text(dateToString(date: date))
+                            if let date = viewModel.parseDate(from: item.transactionDetail.bookingDate) {
+                                Text(viewModel.dateToString(date: date))
                                     .font(.caption)
                             }
                         }
@@ -84,15 +64,14 @@ struct TransactionsList: View {
                 }
             }
             .onAppear {
-                // Load the transactions data from the "PBTransactions.json" file
-                transactions = Bundle.main.decode(Transactions.self, from: "PBTransactions.json")
+                viewModel.loadTransactions()
             }
         }
     }
-
+    
     struct FilterButtonStyle: ButtonStyle {
         let selected: Bool
-
+        
         func makeBody(configuration: Configuration) -> some View {
             configuration.label
                 .padding(.vertical, 10)
@@ -103,19 +82,7 @@ struct TransactionsList: View {
                 .font(.caption)
         }
     }
-
-    func parseDate(from dateString: String) -> Date? {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        return dateFormatter.date(from: dateString)
-    }
-
-    func dateToString(date: Date) -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yy hh:mm a"
-        return dateFormatter.string(from: date)
-    }
-
+    
     struct TransactionsList_Previews: PreviewProvider {
         static var previews: some View {
             TransactionsList()

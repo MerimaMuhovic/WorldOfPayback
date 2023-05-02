@@ -11,9 +11,7 @@ import UIKit
 struct Design {
     struct Color {
         static let blue = UIColor.rgba(red: 3, green: 16, blue: 89, alpha: 1)
-        static let gray = UIColor.rgba(red: 44, green: 61, blue: 115, alpha: 1)
-        static let orange = UIColor.rgba(red: 242, green: 68, blue: 5, alpha: 1)
-        static let beige = UIColor.rgba(red: 242, green: 131, blue: 107, alpha: 1)
+        static let red = UIColor.rgba(red: 255, green: 0, blue: 0, alpha: 1)
     }
     
     struct Font {

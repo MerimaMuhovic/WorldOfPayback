@@ -34,6 +34,7 @@
 		19668E3F2A0062DC0094766E /* TransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E3E2A0062DC0094766E /* TransactionRequest.swift */; };
 		19668E412A0062EB0094766E /* TransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E402A0062EB0094766E /* TransactionResponse.swift */; };
 		19668E462A0116080094766E /* AppConstants .swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E452A0116080094766E /* AppConstants .swift */; };
+		19668E4A2A01AA130094766E /* TransactionListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E492A01AA130094766E /* TransactionListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		19668E3E2A0062DC0094766E /* TransactionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRequest.swift; sourceTree = "<group>"; };
 		19668E402A0062EB0094766E /* TransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionResponse.swift; sourceTree = "<group>"; };
 		19668E452A0116080094766E /* AppConstants .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppConstants .swift"; sourceTree = "<group>"; };
+		19668E492A01AA130094766E /* TransactionListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				1908576D29FB087C006F73F0 /* WorldOfPaybackApp.swift */,
 				194E5A0F29FDBC0500E21322 /* TransactionsList.swift */,
 				194E5A0B29FDBB2C00E21322 /* TransactionDetails.swift */,
+				19668E492A01AA130094766E /* TransactionListModel.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				19668E3F2A0062DC0094766E /* TransactionRequest.swift in Sources */,
 				1908576C29FB02DC006F73F0 /* JSONManager.swift in Sources */,
 				19668E2B2A005CDA0094766E /* TransactionApiClient.swift in Sources */,
+				19668E4A2A01AA130094766E /* TransactionListModel.swift in Sources */,
 				19668E412A0062EB0094766E /* TransactionResponse.swift in Sources */,
 				19668E462A0116080094766E /* AppConstants .swift in Sources */,
 				194E5A0C29FDBB2C00E21322 /* TransactionDetails.swift in Sources */,
