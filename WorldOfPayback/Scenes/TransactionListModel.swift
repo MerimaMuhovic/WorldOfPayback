@@ -11,7 +11,8 @@ class TransactionListModel: ObservableObject {
     
     @Published var transactions: Transactions?
     @Published  var selectedFilterOption = "All"
-    
+    @State private var isLoading = false
+
     var filteredItems: [Item] {
         switch selectedFilterOption {
         case "All":
@@ -32,8 +33,8 @@ class TransactionListModel: ObservableObject {
     }
     
     func loadTransactions() {
-        // Load the transactions data from the "PBTransactions.json" file
         transactions = Bundle.main.decode(Transactions.self, from: "PBTransactions.json")
+
     }
     
     func parseDate(from dateString: String) -> Date? {

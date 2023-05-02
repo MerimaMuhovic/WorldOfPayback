@@ -11,7 +11,8 @@ struct TransactionsList: View {
     @State private var selectedTransaction: Item?
     private let filterOptions = ["All", "Category 1", "Category 2", "Category 3"]
     @ObservedObject private var viewModel = TransactionListModel()
-    
+    @State private var isLoading = false
+
     var body: some View {
         VStack {
             HStack {
@@ -40,6 +41,10 @@ struct TransactionsList: View {
             .padding(.horizontal)
             .padding(.top, 3)
             
+            if isLoading {
+                LoadingSpinner(isLoading: isLoading)
+            }
+            
             List(viewModel.filteredItems, id: \.alias.reference) { item in
                 NavigationLink(destination: TransactionDetails(partnerDisplayName: item.partnerDisplayName, description: item.transactionDetail.description ?? "")) {
                     HStack {
@@ -65,14 +70,19 @@ struct TransactionsList: View {
                 }
             }
             .onAppear {
-                viewModel.loadTransactions()
+                isLoading = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    viewModel.loadTransactions()
+                    isLoading = false
+                }
             }
         }
     }
-    
-    struct TransactionsList_Previews: PreviewProvider {
-        static var previews: some View {
-            TransactionsList()
-        }
+}
+
+
+struct TransactionsList_Previews: PreviewProvider {
+    static var previews: some View {
+        TransactionsList()
     }
 }
