@@ -33,6 +33,7 @@
 		19668E3D2A00619C0094766E /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E3C2A00619C0094766E /* AnyEncodable.swift */; };
 		19668E3F2A0062DC0094766E /* TransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E3E2A0062DC0094766E /* TransactionRequest.swift */; };
 		19668E412A0062EB0094766E /* TransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E402A0062EB0094766E /* TransactionResponse.swift */; };
+		19668E462A0116080094766E /* AppConstants .swift in Sources */ = {isa = PBXBuildFile; fileRef = 19668E452A0116080094766E /* AppConstants .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		19668E3C2A00619C0094766E /* AnyEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
 		19668E3E2A0062DC0094766E /* TransactionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRequest.swift; sourceTree = "<group>"; };
 		19668E402A0062EB0094766E /* TransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionResponse.swift; sourceTree = "<group>"; };
+		19668E452A0116080094766E /* AppConstants .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppConstants .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				19668E372A005FF70094766E /* AppConfiguration.swift */,
+				19668E452A0116080094766E /* AppConstants .swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				1908576C29FB02DC006F73F0 /* JSONManager.swift in Sources */,
 				19668E2B2A005CDA0094766E /* TransactionApiClient.swift in Sources */,
 				19668E412A0062EB0094766E /* TransactionResponse.swift in Sources */,
+				19668E462A0116080094766E /* AppConstants .swift in Sources */,
 				194E5A0C29FDBB2C00E21322 /* TransactionDetails.swift in Sources */,
 				19668E382A005FF70094766E /* AppConfiguration.swift in Sources */,
 				19668E3D2A00619C0094766E /* AnyEncodable.swift in Sources */,

@@ -43,7 +43,7 @@ struct TransactionsList: View {
             }
             .padding(.horizontal)
             .padding(.top, 20)
-            .navigationTitle("Transactions")
+            .navigationTitle(Content.transaction)
 
             HStack {
                 ForEach(filterOptions, id: \.self) { option in

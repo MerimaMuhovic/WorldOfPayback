@@ -10,7 +10,7 @@ import SwiftUI
 struct OfflineScreen: View {
     var body: some View {
         VStack(spacing: 16) {
-            Text("Transactions")
+            Text(Content.transaction)
                 .font(.system(size: 32, weight: .bold))
                 .foregroundColor(.black)
             
@@ -22,14 +22,14 @@ struct OfflineScreen: View {
                     .cornerRadius(16)
                     .padding(.horizontal)
                 
-                Text("Your device is offline.")
+                Text(Content.isDeviceOffline)
                     .foregroundColor(.white)
                     .font(.system(size: 18, weight: .medium))
             }
             
             Spacer()
             
-            Text("Please check your internet connection and try again.")
+            Text(Content.internetCheck)
                 .font(.system(size: 16))
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
